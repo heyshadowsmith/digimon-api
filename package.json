@@ -1,0 +1,26 @@
+{
+  "name": "digimon-api",
+  "version": "1.0.0",
+  "description": "This is a fun api that returns Digimon information.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheShadowSmith/digimon-api.git"
+  },
+  "author": "Shadow Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheShadowSmith/digimon-api/issues"
+  },
+  "homepage": "https://github.com/TheShadowSmith/digimon-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
