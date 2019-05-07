@@ -3,8 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Digimon API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 </head>
-<body>
-    <p>This API takes inspiration from <a href="http://www.ectozone.net/digimon/codex/index2.html" target="_blank">Ectozone's Digidex</a>.</p>
-</body>
-</html>
+
+<body class="has-background-white-bis is-overlay">
+    <section class="section">
+        <div class="container">
+            <div class="box">
+                <h1 class="title">Digimon API</h1>
+                <h2 class="subtitle">A simple API project by <a href="https://shadowsmith.com" target="_blank">Shadow Smith</a>.</h2>
+                <p>The current version of the API lives at <code><a href="/api/digimon">https://digimon-api.herokuapp.com/api/digimon</a></code>.</p>
+                <div class="content">
+                    <ul>
+                        <li>Get the full list of Digimon: <code><a href="/api/digimon">https://digimon-api.herokuapp.com/api/digimon</a></code></li>
+                        <li>Query the API for a specific Digimon by ID by passing the ID in the URL: <br>Example: <code><a href="/api/digimon/1">https://digimon-api.herokuapp.com/api/digimon/1</a></code></li>
+                    </ul>
+                </div>
+                <h2 class="title is-5">API Calls & Endpoints</h2>
+                <table class="table is-bordered">
+                    <thead>
+                        <tr>
+                            <th>HTTP Method</th>
+                            <th>Endpoint</th>
+                            <th>What it does</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>GET</code></td>
+                            <td><code>/api/digimon</code></td>
+                            <td>Returns an array of Digimon based on query parameters.</td>
+                        </tr>
+                        <tr>
+                            <td><code>GET</code></td>
+                            <td><code>/api/digimon/{id}</code></td>
+                            <td>Returns an array of Digimon based on the unique identifier. The array will contain one Digimon.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="title is-5">Field reference</h2>
+                <table class="table is-bordered">
+                    <thead>
+                        <tr>
+                            <th>Field name</th>
+                            <th>Description</th>
+                            <th>Data type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>id</code></td>
+                            <td>Unique identifier</td>
+                            <td>Number</td>
+                        </tr>
+                        <tr>
+                            <td><code>name</code></td>
+                            <td>Digimon's name</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td><code>level</code></td>
+                            <td>Digimon's level</td>
+                            <td>String</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><small>This API takes inspiration from <a href="http://www.ectozone.net/digimon/codex/index2.html" target="_blank">Ectozone's Digidex</a>.</small></p>
+        </div>
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body></html>

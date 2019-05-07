@@ -34,6 +34,41 @@ const digimon = [
         id: 7,
         name: "Tokomon",
         level: "In Training"
+    },
+    {
+        id: 8,
+        name: "Agumon",
+        level: "Rookie"
+    },
+    {
+        id: 9,
+        name: "Gabumon",
+        level: "Rookie"
+    },
+    {
+        id: 10,
+        name: "Biyomon",
+        level: "Rookie"
+    },
+    {
+        id: 11,
+        name: "Tentomon",
+        level: "Rookie"
+    },
+    {
+        id: 12,
+        name: "Palmon",
+        level: "Rookie"
+    },
+    {
+        id: 13,
+        name: "Gomamon",
+        level: "Rookie"
+    },
+    {
+        id: 14,
+        name: "Patamon",
+        level: "Rookie"
     }
 ];
 
