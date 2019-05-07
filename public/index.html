@@ -16,7 +16,8 @@
                 <div class="content">
                     <ul>
                         <li>Get the full list of Digimon: <code><a href="/api/digimon">https://digimon-api.herokuapp.com/api/digimon</a></code></li>
-                        <li>Query the API for a specific Digimon by ID by passing the ID in the URL: <br>Example: <code><a href="/api/digimon/1">https://digimon-api.herokuapp.com/api/digimon/1</a></code></li>
+                        <li>Query the API for a specific Digimon by name by passing the name in the URL: <br><b>Example:</b> <code><a href="/api/digimon/name/agumon">https://digimon-api.herokuapp.com/api/digimon/name/agumon</a></code></li>
+                        <li>Query the API for a specific Digimon by ID by passing the ID in the URL: <br><b>Example:</b> <code><a href="/api/digimon/id/8">https://digimon-api.herokuapp.com/api/digimon/id/8</a></code></li>
                     </ul>
                 </div>
                 <h2 class="title is-5">API Calls & Endpoints</h2>
@@ -32,12 +33,17 @@
                         <tr>
                             <td><code class="has-text-link">GET</code></td>
                             <td><code>/api/digimon</code></td>
-                            <td>Returns an array of Digimon based on query parameters.</td>
+                            <td>Returns an array of all Digimon in our database.</td>
                         </tr>
                         <tr>
                             <td><code class="has-text-link">GET</code></td>
-                            <td><code>/api/digimon/{id}</code></td>
-                            <td>Returns an array of Digimon based on the unique identifier. The array will contain one Digimon.</td>
+                            <td><code>/api/digimon/name/{name}</code></td>
+                            <td>Returns an array of Digimon based on their name. <br>The array will contain one Digimon.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="has-text-link">GET</code></td>
+                            <td><code>/api/digimon/id/{id}</code></td>
+                            <td>Returns an array of Digimon based on the unique identifier. <br>The array will contain one Digimon.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -73,5 +79,4 @@
             <p><small>This API takes inspiration from <a href="http://www.ectozone.net/digimon/codex/index2.html" target="_blank">Ectozone's Digidex</a>.</small></p>
         </div>
     </section>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body></html>
