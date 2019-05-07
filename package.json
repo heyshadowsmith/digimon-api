@@ -19,7 +19,8 @@
   "homepage": "https://github.com/TheShadowSmith/digimon-api#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "helmet": "^3.18.0"
+    "helmet": "^3.18.0",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"

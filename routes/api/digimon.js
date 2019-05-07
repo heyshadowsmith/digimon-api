@@ -4,6 +4,8 @@ const express = require('express');
 const router = express.Router();
 // Add the faux Digimon database
 const digimon = require('../../database/Digimon');
+// Add Lodash
+const _ = require('lodash');
 
 // Count Digimon
 const total_digimon = digimon.length;
@@ -21,7 +23,23 @@ router.get('/name/:name', (req, res) => {
     } else {
         res.status(400).json(
             {
-                ErrorMsg: `${digimon_name} is not a Digimon in our database.` 
+                ErrorMsg: `${_.startCase(_.toLower(digimon_name))} is not a Digimon in our database.` 
+            }
+        );
+    }
+});
+
+// Get Digimon by Level
+router.get('/level/:level', (req, res) => {
+    const digimon_level = req.params.level;
+    const found = digimon.some(digimon => digimon.level.toLowerCase().replace(/\s/g, '') === digimon_level.toLowerCase().replace(/\s/g, ''));
+    
+    if(found) {
+        res.json(digimon.filter(digimon => digimon.level.toLowerCase().replace(/\s/g, '') === digimon_level.toLowerCase().replace(/\s/g, '')));
+    } else {
+        res.status(400).json(
+            {
+                ErrorMsg: `${_.startCase(_.toLower(digimon_level))} is not a level in our database.` 
             }
         );
     }
