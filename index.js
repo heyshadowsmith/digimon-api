@@ -2,9 +2,14 @@
 const express = require('express');
 // Add Express.js path
 const path = require('path');
+// Add Helmet middleware
+const helmet = require('helmet');
 
 // Init Express.js
 const app = express();
+
+// Init middleware
+app.use(helmet());
 
 // Init static folder
 app.use(express.static(path.join(__dirname, 'public')));

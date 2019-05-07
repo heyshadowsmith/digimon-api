@@ -1,9 +1,12 @@
 // Add Express.js
-const express = require ('express');
+const express = require('express');
 // Add the Express.js router 
 const router = express.Router();
 // Add the faux Digimon database
 const digimon = require('../../database/Digimon');
+
+// Count Digimon
+const total_digimon = digimon.length;
 
 // Get all Digimon
 router.get('/', (req, res) => res.json(digimon));
@@ -19,7 +22,7 @@ router.get('/:id', (req, res) => {
         
         res.status(400).json(
             {
-               ErrorMsg: `No Digimon in our database has an ID of ${digimon_ID}.` 
+               ErrorMsg: `A Digimon with an ID of ${digimon_ID} could not be returned because there are only ${total_digimon} Digimon in our database.` 
             }
         );
     }
