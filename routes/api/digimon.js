@@ -11,14 +11,30 @@ const total_digimon = digimon.length;
 // Get all Digimon
 router.get('/', (req, res) => res.json(digimon));
 
-// Get single Digimon by ID
-router.get('/:id', (req, res) => {
-    const found = digimon.some(digimon => digimon.id === parseInt(req.params.id));
+// Get Digimon by Name
+router.get('/name/:name', (req, res) => {
+    const digimon_name = req.params.name;
+    const found = digimon.some(digimon => digimon.name.toLowerCase() === digimon_name.toLowerCase());
     
     if(found) {
-        res.json(digimon.filter(digimon => digimon.id === parseInt(req.params.id)));
+        res.json(digimon.filter(digimon => digimon.name.toLowerCase() === digimon_name.toLowerCase()));
     } else {
-        const digimon_ID = req.params.id;
+        res.status(400).json(
+            {
+                ErrorMsg: `${digimon_name} is not a Digimon in our database.` 
+            }
+        );
+    }
+});
+
+// Get single Digimon by ID
+router.get('/id/:id', (req, res) => {
+    const digimon_id = req.params.id;
+    const found = digimon.some(digimon => digimon.id === parseInt(digimon_id));
+    
+    if(found) {
+        res.json(digimon.filter(digimon => digimon.id === parseInt(digimon_id)));
+    } else {
         
         res.status(400).json(
             {
