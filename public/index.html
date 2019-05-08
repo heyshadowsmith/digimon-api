@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digimon API</title>
+    <link rel="shortcut icon" href="Favicon.x-ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <style>
         .content__wrapper {
             overflow-x: auto;
         }
-
     </style>
 </head>
 
@@ -19,7 +19,7 @@
         <div class="container">
             <div class="box">
                 <div class="content__wrapper">
-                    <h1 class="title">Digimon API</h1>
+                    <h1 class="title">Digimon API <a href="playground.html" class="button is-link is-pulled-right">Go to API Playground</a></h1>
                     <h2 class="subtitle">A simple API project by <a href="https://shadowsmith.com" target="_blank">Shadow Smith</a>.</h2>
                     <p>The current version of the API lives at <code><a href="/api/digimon">https://digimon-api.herokuapp.com/api/digimon</a></code>.</p>
                     <div class="content">
@@ -95,17 +95,12 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div id="app">
-                        {{ name }}
-                    </div>
                 </div>
-
-                <p><small>This API takes inspiration from <a href="http://www.ectozone.net/digimon/codex/index2.html" target="_blank">Ectozone's Digidex</a>.</small></p>
             </div>
+            <p><small>API inspiration from <a href="http://www.ectozone.net/digimon/codex/index2.html" target="_blank">Ectozone's Digidex</a> | Pictures from <a href="https://digimon.fandom.com/wiki/Digimon_Wiki" target="_blank">Digimon Wiki</a>.</small></p>
         </div>
     </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
-</body>
-
-</html>
+</body></html>

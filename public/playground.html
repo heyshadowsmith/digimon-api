@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-white-bis">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digimon API</title>
+    <link rel="shortcut icon" href="Favicon.x-ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <style>
+        .content__wrapper {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="app" class="section">
+        <div class="container">
+            <div class="box">
+                <div class="content__wrapper">
+                    <h1 class="title">Digimon API <a href="index.html" class="button is-link is-pulled-right">Go to API Docs</a></h1>
+                    <h2 class="subtitle">Playground</h2>
+                    <div>
+                        <div class="field">
+                            <label class="label">Search by Digimon ID</label>
+                            <div class="control">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <a class="button is-static">
+                                            https://digimon-api.herokuapp.com/api/digimon/level/
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <input class="input" type="text" placeholder="{id}" v-model="id">
+                                    </p>
+                                    <p class="control">
+                                        <button class="button is-link" @click="searchId()">Search</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Search by Digimon Name</label>
+                            <div class="control">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <a class="button is-static">
+                                            https://digimon-api.herokuapp.com/api/digimon/name/
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <input class="input" type="text" placeholder="{name}" v-model="name">
+                                    </p>
+                                    <p class="control">
+                                        <button class="button is-link" @click="searchName()">Search</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Search by Digimon Level</label>
+                            <div class="control">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <a class="button is-static">
+                                            https://digimon-api.herokuapp.com/api/digimon/level/
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <input class="input" type="text" placeholder="{level}" v-model="level">
+                                    </p>
+                                    <p class="control">
+                                        <button class="button is-link" @click="searchLevel()">Search</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <article class="media" v-for="(digimon, index) in response">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img :src="digimon.img">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>{{ digimon.name }}</strong> <br><small>{{ digimon.level }}</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <p><small>API inspiration from <a href="http://www.ectozone.net/digimon/codex/index2.html" target="_blank">Ectozone's Digidex</a> | Pictures from <a href="https://digimon.fandom.com/wiki/Digimon_Wiki" target="_blank">Digimon Wiki</a>.</small></p>
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body></html>
