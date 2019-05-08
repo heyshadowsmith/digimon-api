@@ -4,12 +4,15 @@ const express = require('express');
 const path = require('path');
 // Add Helmet middleware
 const helmet = require('helmet');
+// Add Cors middleware
+const cors = require('cors');
 
 // Init Express.js
 const app = express();
 
 // Init middleware
 app.use(helmet());
+app.use(cors());
 
 // Init static folder
 app.use(express.static(path.join(__dirname, 'public')));
