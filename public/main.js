@@ -6,32 +6,46 @@ let vm = new Vue({
         level: "",
         url: "",
         response: "",
-        endpoint: "https://digimon-api.herokuapp.com/api/digimon/"
+        endpoint: "https://digimon-api.herokuapp.com/api/digimon/",
+        error: {
+            isVisible: false,
+            message: "Nothing matches your input in our database."
+        }
     },
     methods: {
         searchName: function() {
-            let name = "name/" + this.name;
-            this.getDigimon(name);  
+            let path = "name/";
+            let name = this.name;
+            this.getDigimon(path, name);  
+            
             this.name = "";
+            this.error.isVisible = false;
         },
         searchLevel: function() {
-            let level = "level/" + this.level;
-            this.getDigimon(level);
+            let path = "level/";
+            let level = this.level;
+            this.getDigimon(path, level);
+            
             this.level = "";
+            this.error.isVisible = false;
         },
         searchId: function() {
-            let id = "id/" + this.id;
-            this.getDigimon(id);
+            let path = "id/";
+            let id = this.id;
+            this.getDigimon(path, id);
+            
             this.id = "";
+            this.error.isVisible = false;
         },
-        getDigimon: function(parameters) {
+        getDigimon: function(path, parameter) {
             axios({
                 method: "GET",
-                "url": this.endpoint + parameters
+                "url": this.endpoint + path + parameter
             }).then(result => {
                 this.response = result.data;
             }, error => {
-                console.error(error);
+                this.error.message = `${parameter} isn\'t in our database.`;
+                this.error.isVisible = true;
             });
         }
     }

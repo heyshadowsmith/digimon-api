@@ -28,7 +28,7 @@
                                 <div class="field has-addons">
                                     <p class="control">
                                         <a class="button is-static">
-                                            https://digimon-api.herokuapp.com/api/digimon/level/
+                                            https://digimon-api.herokuapp.com/api/digimon/id/
                                         </a>
                                     </p>
                                     <p class="control">
@@ -91,6 +91,10 @@
                                 </div>
                             </div>
                         </article>
+                        <div v-if="error.isVisible" class="notification is-warning">
+                            <button class="delete" @click="error.isVisible = false"></button>
+                            {{ error.message }}
+                        </div>
                     </div>
                 </div>
             </div>
