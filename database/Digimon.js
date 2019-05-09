@@ -232,25 +232,25 @@ const digimon = [
         id: 39,
         name: "Botamon",
         img: "https://digimon.shadowsmith.com/img/botamon.jpg",
-        level: "Rookie"
+        level: "Fresh"
     },
     {
         id: 40,
         name: "Punimon",
         img: "https://digimon.shadowsmith.com/img/punimon.jpg",
-        level: "In Training"
+        level: "Fresh"
     },
     {
         id: 41,
         name: "Poyomon",
         img: "https://digimon.shadowsmith.com/img/poyomon.jpg",
-        level: "In Training"
+        level: "Fresh"
     },
     {
         id: 42,
         name: "Yuramon",
         img: "https://digimon.shadowsmith.com/img/yuramon.jpg",
-        level: "In Training"
+        level: "Fresh"
     },
     {
         id: 43,
