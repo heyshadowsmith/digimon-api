@@ -599,8 +599,301 @@ const digimon = [
         name: "Scorpiomon",
         img: "https://digimon.shadowsmith.com/img/scorpiomon.jpg",
         level: "Ultimate"
+    },
+    {
+        id: 101,
+        name: "Divermon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 102,
+        name: "Kiwimon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 103,
+        name: "Mushroomon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 104,
+        name: "Blossomon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 105,
+        name: "Floramon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 106,
+        name: "Deramon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 107,
+        name: "Cherrymon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 108,
+        name: "Garbagemon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 109,
+        name: "MetalEtemon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 110,
+        name: "SaberLeomon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 111,
+        name: "RedVegiemon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 112,
+        name: "Medakanorimon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 113,
+        name: "Tankmon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 114,
+        name: "Hagurumon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 115,
+        name: "WaruMonzaemon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 116,
+        name: "LadyDevimon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 117,
+        name: "Vilemon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 118,
+        name: "Apocalymon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 119,
+        name: "Kunemon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 120,
+        name: "Musyamon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 124,
+        name: "Starmon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 127,
+        name: "HerculesKabuterimon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 133,
+        name: "Candlemon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 134,
+        name: "Hanumon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 135,
+        name: "Kokuwamon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 137,
+        name: "Revolvermon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 138,
+        name: "Plesiomon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 140,
+        name: "Megadramon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 142,
+        name: "BlueMeramon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 143,
+        name: "Magnadramon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 145,
+        name: "Gorillamon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 151,
+        name: "Syakomon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 153,
+        name: "MarineAngemon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 156,
+        name: "Boltmon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 157,
+        name: "Mamemon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 160,
+        name: "ExTyrannomon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 163,
+        name: "Veedramon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 165,
+        name: "AeroVeedramon",
+        img: "",
+        level: "Ultimate"
+    },
+    {
+        id: 168,
+        name: "Phoenixmon",
+        img: "",
+        level: "Mega"
+    },
+    {
+        id: 171,
+        name: "Betamon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 173,
+        name: "Guardromon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 175,
+        name: "Penguinmon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 177,
+        name: "PlatinumSukamon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 178,
+        name: "Psychemon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 179,
+        name: "Gururumon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 181,
+        name: "Tsukaimon",
+        img: "",
+        level: "Rookie"
+    },
+    {
+        id: 183,
+        name: "ModokiBetamon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 184,
+        name: "Saberdramon",
+        img: "",
+        level: "Champion"
+    },
+    {
+        id: 185,
+        name: "SnowAgumon",
+        img: "",
+        level: "Rookie"
     }
-];
-
+]
 // Export faux Digimon database
 module.exports = digimon;
