@@ -27,7 +27,6 @@
                             <li>Get the full list of Digimon: <code><a href="/api/digimon">https://digimon-api.herokuapp.com/api/digimon</a></code></li>
                             <li>Query the API for a specific Digimon by name by passing the name in the URL: <br><b>Example:</b> <code><a href="/api/digimon/name/agumon">https://digimon-api.herokuapp.com/api/digimon/name/agumon</a></code></li>
                             <li>Query the API for a list of Digimon by level by passing the level in the URL: <br><b>Example:</b> <code><a href="/api/digimon/level/rookie">https://digimon-api.herokuapp.com/api/digimon/level/rookie</a></code></li>
-                            <li>Query the API for a specific Digimon by ID by passing the ID in the URL: <br><b>Example:</b> <code><a href="/api/digimon/id/8">https://digimon-api.herokuapp.com/api/digimon/id/8</a></code></li>
                         </ul>
                     </div>
                     <h2 class="title is-5">API Calls & Endpoints</h2>
@@ -44,11 +43,6 @@
                                 <td><code class="has-text-link">GET</code></td>
                                 <td><code>/api/digimon</code></td>
                                 <td>Returns an array of all Digimon in our database.</td>
-                            </tr>
-                            <tr>
-                                <td><code class="has-text-link">GET</code></td>
-                                <td><code>/api/digimon/id/{id}</code></td>
-                                <td>Returns an array of Digimon based on the unique identifier. <br>The array will contain one Digimon.</td>
                             </tr>
                             <tr>
                                 <td><code class="has-text-link">GET</code></td>
@@ -73,11 +67,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><code>id</code></td>
-                                <td>Unique identifier</td>
-                                <td>Number</td>
-                            </tr>
                             <tr>
                                 <td><code>name</code></td>
                                 <td>Digimon's name</td>
