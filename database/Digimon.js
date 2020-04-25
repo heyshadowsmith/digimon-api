@@ -923,7 +923,7 @@ const digimon = [
     {
         name: "Shurimon",
         img: "https://digimon.shadowsmith.com/img/shurimon.jpg",
-        level: ""
+        level: "Armor"
     },
     {
         name: "Toucanmon",
