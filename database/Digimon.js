@@ -766,8 +766,8 @@ const digimon = [
         level: "Champion"
     },
     {
-        name: "Vermillimon",
-        img: "https://digimon.shadowsmith.com/img/vermillimon.jpg",
+        name: "Vermilimon",
+        img: "https://digimon.shadowsmith.com/img/vermilimon.jpg",
         level: "Ultimate"
     },
     {
