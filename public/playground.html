@@ -25,37 +25,41 @@
                         <div class="field">
                             <label class="label">Search by Digimon Name</label>
                             <div class="control">
-                                <div class="field has-addons">
-                                    <p class="control">
-                                        <a class="button is-static">
-                                            https://digimon-api.herokuapp.com/api/digimon/name/
-                                        </a>
-                                    </p>
-                                    <p class="control">
-                                        <input class="input" type="text" placeholder="{name}" v-model="name">
-                                    </p>
-                                    <p class="control">
-                                        <button class="button is-link" @click="searchName()">Search</button>
-                                    </p>
-                                </div>
+                                <form @submit.prevent="searchName">
+                                    <div class="field has-addons">
+                                        <p class="control">
+                                            <a class="button is-static">
+                                                https://digimon-api.vercel.app/api/digimon/name/
+                                            </a>
+                                        </p>
+                                        <p class="control">
+                                            <input class="input" type="text" placeholder="name" v-model="name">
+                                        </p>
+                                        <p class="control">
+                                            <button class="button is-link">Search</button>
+                                        </p>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Search by Digimon Level</label>
                             <div class="control">
-                                <div class="field has-addons">
-                                    <p class="control">
-                                        <a class="button is-static">
-                                            https://digimon-api.herokuapp.com/api/digimon/level/
-                                        </a>
-                                    </p>
-                                    <p class="control">
-                                        <input class="input" type="text" placeholder="{level}" v-model="level">
-                                    </p>
-                                    <p class="control">
-                                        <button class="button is-link" @click="searchLevel()">Search</button>
-                                    </p>
-                                </div>
+                                <form @submit.prevent="searchLevel">
+                                    <div class="field has-addons">
+                                        <p class="control">
+                                            <a class="button is-static">
+                                                https://digimon-api.vercel.app/api/digimon/level/
+                                            </a>
+                                        </p>
+                                        <p class="control">
+                                            <input class="input" type="text" placeholder="level" v-model="level">
+                                        </p>
+                                        <p class="control">
+                                            <button class="button is-link">Search</button>
+                                        </p>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <hr>

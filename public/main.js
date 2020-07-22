@@ -6,7 +6,7 @@ let vm = new Vue({
         level: "",
         url: "",
         response: "",
-        endpoint: "https://digimon-api.herokuapp.com/api/digimon/",
+        endpoint: "https://digimon-api.vercel.app/api/digimon/",
         error: {
             isVisible: false,
             message: "Nothing matches your input in our database."
