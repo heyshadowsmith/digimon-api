@@ -23,7 +23,7 @@
     "express": "^4.16.4",
     "firebase": "^6.0.2",
     "helmet": "^3.18.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "vuefire": "^1.4.5"
   },
   "devDependencies": {
