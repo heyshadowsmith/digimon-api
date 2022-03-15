@@ -907,7 +907,7 @@ const digimon = [
     },
     {
         name: "Magnamon",
-        img: "https://digimon.shadowsmith.com/img/maganamon.jpg",
+        img: "https://digimon.shadowsmith.com/img/magnamon.jpg",
         level: "Armor"
     },
     {
