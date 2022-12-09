@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "firebase": "^6.0.2",
     "helmet": "^3.18.0",
     "lodash": "^4.17.11",
