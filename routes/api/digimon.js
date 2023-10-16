@@ -19,7 +19,7 @@ router.get('/name/:name', (req, res) => {
     const found = digimon.some(digimon => digimon.name.toLowerCase() === digimon_name.toLowerCase());
     
     if(found) {
-        res.json(digimon.filter(digimon => digimon.name.toLowerCase() === digimon_name.toLowerCase()));
+        res.json(digimon.find(digimon => digimon.name.toLowerCase() === digimon_name.toLowerCase()));
     } else {
         res.status(400).json(
             {
